@@ -9,7 +9,7 @@ const Article = (props) => {
       <h2>{props.title}</h2>
       <label htmlFor="check">公開状態:</label>
       <input type="checkbox" checked={isPublished} id="check" onClick={()=> togglePublished(!isPublished)}/>
-      {/* <LikeButon count={props.count}/> */}
+      <LikeButon />
     </div>
     //無限ループが起きてしまうのでこのような書き方をしている
   )
